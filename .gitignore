@@ -1,0 +1,12 @@
+.DS_Store
+.env
+.env.*
+**/node_modules/
+**/auth.json
+**/mcp-auth.json
+**/*-cache.json
+**/models-store.json
+**/litellm-models.json
+**/pi-crash.log
+**/sessions/
+pi/agent/mcp.json

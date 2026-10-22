@@ -1,0 +1,50 @@
+{
+  "imports": [
+    "claude-code",
+    "claude-desktop"
+  ],
+  "mcpServers": {
+    "atlassian": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v1/mcp"
+    },
+    "context7": {
+      "headers": {
+        "CONTEXT7_API_KEY": "REPLACE_WITH_CONTEXT7_API_KEY"
+      },
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "github": {
+      "headers": {
+        "Authorization": "Bearer REPLACE_WITH_GITHUB_MCP_TOKEN"
+      },
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp"
+    },
+    "google-workspace": {
+      "args": [
+        "tsx",
+        "REPLACE_WITH_PATH_TO_GOOGLE_WORKSPACE_MCP/src/index.ts"
+      ],
+      "command": "npx",
+      "type": "stdio"
+    },
+    "n8n": {
+      "type": "http",
+      "url": "https://n8n.internal-ai.goodnotesbeta.com/mcp-server/http"
+    },
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp"
+    },
+    "slack": {
+      "auth": "oauth",
+      "url": "https://mcp.slack.com/mcp"
+    },
+    "slack-local": {
+      "type": "http",
+      "url": "http://127.0.0.1:31437/mcp"
+    }
+  }
+}

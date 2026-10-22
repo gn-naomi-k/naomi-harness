@@ -1,0 +1,20 @@
+{
+  "defaultAction": "block",
+  "rules": [
+    {
+      "action": "allow",
+      "match": {
+        "ids": [
+          "fireworks_ai/accounts/fireworks/models/kimi-k3",
+          "fireworks_ai/accounts/fireworks/models/glm-5p3",
+          "fireworks_ai/accounts/fireworks/models/glm-5p3-flash",
+          "openrouter/inception/mercury-3",
+          "openai/gpt-5.6-sol",
+          "openai/gpt-5.6-luna",
+          "anthropic/claude-sonnet-5-5"
+        ]
+      },
+      "provider": "litellm"
+    }
+  ]
+}
