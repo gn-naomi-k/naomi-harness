@@ -1,8 +1,4 @@
 {
-  "imports": [
-    "claude-code",
-    "claude-desktop"
-  ],
   "mcpServers": {
     "atlassian": {
       "type": "http",
@@ -39,12 +35,17 @@
       "url": "https://mcp.notion.com/mcp"
     },
     "slack": {
-      "auth": "oauth",
       "url": "https://mcp.slack.com/mcp"
     },
     "slack-local": {
       "type": "http",
       "url": "http://127.0.0.1:31437/mcp"
+    },
+    "treg": {
+      "headers": {
+        "Authorization": "Bearer REPLACE_WITH_TREG_MCP_TOKEN"
+      },
+      "url": "https://treg.to/mcp/"
     }
   }
 }

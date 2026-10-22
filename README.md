@@ -7,7 +7,7 @@ Declarative configuration for Naomi's pi coding-agent setup.
 - pi defaults, extensions, and skill path
 - model allowlist
 - npm extension dependency manifest and lockfile
-- MCP server template with credentials replaced by placeholders
+- MCP server template for Pi's built-in MCP support, with credentials replaced by placeholders
 
 ## Restore
 
@@ -17,6 +17,7 @@ cp pi/agent/settings.json ~/.pi/agent/settings.json
 cp pi/agent/model-filter.json ~/.pi/agent/model-filter.json
 cp pi/agent/mcp.json.example ~/.pi/agent/mcp.json
 # Edit ~/.pi/agent/mcp.json and add credentials locally.
+# Sign in to OAuth servers as needed: pi mcp login <server>
 cp pi/agent/npm/package.json ~/.pi/agent/npm/package.json
 cp pi/agent/npm/package-lock.json ~/.pi/agent/npm/package-lock.json
 (cd ~/.pi/agent/npm && npm ci)

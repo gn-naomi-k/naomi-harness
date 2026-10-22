@@ -5,7 +5,6 @@
     "@juicesharp/rpiv-ask-user-question": "^2.13.9",
     "@juicesharp/rpiv-todo": "^2.13.9",
     "pi-lens": "^4.4.4",
-    "pi-mcp-adapter": "^5.4.0",
     "pi-model-filter": "^0.1.2",
     "pi-provider-litellm": "^4.4.1",
     "pi-web-search": "^1.7.0"
